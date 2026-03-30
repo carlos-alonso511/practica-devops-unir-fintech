@@ -8,6 +8,14 @@ Los comandos del Makefile funcionarán en Linux y MacOS. En caso de usar Windows
 
 ## Ejecución
 
+# Directamente utilizando python
 python3 main.py <filename> <dup>
   filename: **ruta** al fichero que contiene la lista de palabras, una por línea
   dup: **yes|no**, yes para eliminar palabras duplicadas, no para mantener la lista
+
+# Utilizando docker con palabras por defecto
+make run
+
+# Utilizando docker pasando el fichero y el parametro para eliminar o no duplicados
+make run file=words.txt dup=yes
+
