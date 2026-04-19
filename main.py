@@ -11,7 +11,7 @@ DEFAULT_DUPLICATES = False
 DEFAULT_ASCENDING = True
 
 
-def sort_list(items, ascending=True):
+def sort_list(items, tipoOrdenacion):
     if not isinstance(items, list):
         raise RuntimeError(f"No puede ordenar {type(items)}")
 
